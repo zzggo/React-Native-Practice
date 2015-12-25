@@ -1,5 +1,45 @@
+### SublimeText ###
+*.sublime-workspace
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Webstorm
+.idea
+
+# App specific
+
+npm-debug.log
+node_modules/
+.tmp
+old
+
+# Binaries
+*.ipa
+*.zip
+
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -9,18 +49,14 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.xcworkspace
+!default.xcworkspace
 xcuserdata
-*.xccheckout
+profile
 *.moved-aside
 DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-#
-#Pods/
+.idea/
+
+# Pods - for those of you who use CocoaPods
+Pods
