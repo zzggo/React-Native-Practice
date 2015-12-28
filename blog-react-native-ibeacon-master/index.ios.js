@@ -3,7 +3,7 @@
 var React = require('react-native');
 var Featured = require('./Featured');
 var Search = require('./Search');
-var BeaconList = require('./BeaconList');
+var Beacon = require('./Beacon');
 
 var {
     AppRegistry,
@@ -11,7 +11,7 @@ var {
     Component
    } = React;
 
-class Example extends Component {
+class ReactNativeBeaconExample extends Component {
 
     constructor(props) {
         super(props);
@@ -40,11 +40,11 @@ class Example extends Component {
                             selectedTab: 'search'
                         });
                     }}>
-                    <BeaconList/>
+                    <Beacon/>
                 </TabBarIOS.Item>
             </TabBarIOS>
         );
     }
 }
 
-AppRegistry.registerComponent('Example', () => Example);
+AppRegistry.registerComponent('ReactNativeBeaconExample', () => ReactNativeBeaconExample);

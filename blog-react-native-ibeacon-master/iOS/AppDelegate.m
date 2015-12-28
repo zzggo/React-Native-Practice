@@ -29,11 +29,7 @@
    * (you can get this by typing `ifconfig` into the terminal and selecting the
    * `inet` value under `en0:`) and make sure your computer and iOS device are
    * on the same Wi-Fi network.
-   */
-
- // jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.103:8081/index.ios.bundle"];
-
-  /**
+   *
    * OPTION 2
    * Load from pre-bundled file on disk. To re-generate the static bundle
    * from the root of your project directory, run
@@ -43,10 +39,11 @@
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
 
+//  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"Example"
+                                                      moduleName:@"ReactNativeBeaconExample"
                                                    launchOptions:launchOptions];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
