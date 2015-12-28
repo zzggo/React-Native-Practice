@@ -39,8 +39,8 @@
    * see http://facebook.github.io/react-native/docs/runningondevice.html
    */
 
-//  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
-  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
+//  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ReactNativeBeaconExample"
